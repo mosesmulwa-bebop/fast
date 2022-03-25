@@ -8,10 +8,10 @@ router  = APIRouter(
 )
 
 @router.get('/historical')
-def historical():
-    base_curr = "USD"
-    target_curr = "KES"
-    date_string ="2021-06-07"
+def historical(base_curr:str, target_curr:str, date_string:str):
+    # base_curr = "USD"
+    # target_curr = "KES"
+    # date_string ="2021-06-07"
     final_url = make_historical_url(base_curr, target_curr,date_string)
     historical_response = requests.get(final_url).json()
     key_dict = base_curr+"_"+target_curr
