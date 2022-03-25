@@ -1,0 +1,7 @@
+what I want to achieve
+
+First,create a virtual environment
+set up fastapi ,uvicorn.
+set request to home.
+Receive response
+
