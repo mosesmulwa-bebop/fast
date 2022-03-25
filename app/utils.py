@@ -1,4 +1,8 @@
-api_key = "33502c63e80736700dc5"
+#api_key = "33502c63e80736700dc5"
+
+from .config import settings
+api_key = settings.api_key
+
 
 def make_convert_url(from_curr, to_curr):
     base_url = "https://free.currconv.com/api/v7/convert?q="
