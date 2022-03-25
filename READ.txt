@@ -1,7 +1,7 @@
 what I want to achieve
 
 First,create a virtual environment -> py -3 -m venv venv
-set up fastapi ,uvicorn.
+set up fastapi ,uvicorn. uvicorn app.main:app --reload
 set request to home.
 Receive response
 

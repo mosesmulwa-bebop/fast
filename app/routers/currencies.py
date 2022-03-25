@@ -7,11 +7,11 @@ router  = APIRouter(
 
 @router.get('/currencies')
 def currencies():
-    currency_api_url = "http://api.exchangeratesapi.io/v1/latest?access_key=e5c20fa1b72ecc525b38c4540d5f4dae"
-    currency_response = requests.get(currency_api_url)
-    currency_response_dict = currency_response.json()
-    rates_dict = currency_response_dict['rates']
-    rates_list = []
-    for key in rates_dict:
-        rates_list.append(key)
-    return {"Currencies":rates_list}
+    api_key = "33502c63e80736700dc5"
+    single_base ="https://free.currconv.com/api/v7/"
+    final_currency_url = single_base+"currencies?apiKey="+api_key
+    curr_response = requests.get(final_currency_url).json()['results']
+    my_curr_list = []
+    for key in curr_response:
+        my_curr_list.append(key)
+    return {"Currencies":my_curr_list}
