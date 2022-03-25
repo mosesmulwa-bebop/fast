@@ -1,6 +1,6 @@
 what I want to achieve
 
-First,create a virtual environment
+First,create a virtual environment -> py -3 -m venv venv
 set up fastapi ,uvicorn.
 set request to home.
 Receive response
