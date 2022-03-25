@@ -1,15 +1,15 @@
 from fastapi import APIRouter
 import requests
 
+from ..utils import make_currencies_url
+
 router  = APIRouter(
     tags = ['Currencies']
 )
 
 @router.get('/currencies')
 def currencies():
-    api_key = "33502c63e80736700dc5"
-    single_base ="https://free.currconv.com/api/v7/"
-    final_currency_url = single_base+"currencies?apiKey="+api_key
+    final_currency_url = make_currencies_url()
     curr_response = requests.get(final_currency_url).json()['results']
     my_curr_list = []
     for key in curr_response:
