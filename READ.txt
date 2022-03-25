@@ -5,3 +5,8 @@ set up fastapi ,uvicorn. uvicorn app.main:app --reload
 set request to home.
 Receive response
 
+
+Docker commands
+Docker build image - docker build -t fast .
+Docker container - docker-compose up -d
+
