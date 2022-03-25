@@ -2,6 +2,8 @@ import requests
 
 api_key = "33502c63e80736700dc5"
 base_url = "https://free.currconv.com/api/v7/convert?q="
+single_base ="https://free.currconv.com/api/v7/"
+final_list_url = ""
 to_convert = 100
 from_curr = "USD"
 to_curr = "KES"
