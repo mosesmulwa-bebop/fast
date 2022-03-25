@@ -1,5 +1,3 @@
-#api_key = "33502c63e80736700dc5"
-
 from .config import settings
 api_key = settings.api_key
 
